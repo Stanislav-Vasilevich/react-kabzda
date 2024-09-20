@@ -2,21 +2,19 @@ import React, {FC} from 'react';
 import Star from "../Star/Star";
 
 type PropsType = {
-	value: 1 | 2 | 3 | 4 | 5;
+	value: 0 | 1 | 2 | 3 | 4 | 5;
 }
 
 const Rating: FC<PropsType> = (props) => {
-	if(props.value > 0) {
-		return (
-			<div>
-				<Star select={true}/>
-				<Star select={true}/>
-				<Star select={true}/>
-				<Star select={false}/>
-				<Star select={false}/>
-			</div>
-		);
-	}
+	return (
+		<>
+			<Star select={props.value > 0}/>
+			<Star select={props.value > 1}/>
+			<Star select={props.value > 2}/>
+			<Star select={props.value > 3}/>
+			<Star select={props.value > 4}/>
+		</>
+	);
 };
 
 export default Rating;

@@ -6,7 +6,7 @@ import Accordion from "./Components/Accordion/Accordion";
 function App() {
   return (
     <div>
-      <Rating value={3}/>
+      <Rating value={4}/>
 			<Accordion selected={false}/>
     </div>
   );
