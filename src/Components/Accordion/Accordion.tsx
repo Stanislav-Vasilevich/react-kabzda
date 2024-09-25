@@ -1,24 +1,22 @@
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
+import AccordionTitle from "../AccordionTitle/AccordionTitle";
+import AccordionBody from "../AccordionBody/AccordionBody";
 
 type PropsType = {
 	selected: boolean
 }
 
 const Accordion: FC<PropsType> = (props) => {
+	const [selected, setSelected] = useState(true);
+
+	const changeSelected = () => {
+		setSelected(!selected);
+	}
+
 	return (
 		<div>
-			<h1>Меню:</h1>
-			{
-				props.selected
-				? (
-					<ul>
-						<li>one</li>
-						<li>two</li>
-						<li>three</li>
-					</ul>
-				)
-				: ''
-			}
+			<AccordionTitle title="Menu" changeSelected={changeSelected}/>
+			<AccordionBody selected={selected}/>
 		</div>
 	);
 };
