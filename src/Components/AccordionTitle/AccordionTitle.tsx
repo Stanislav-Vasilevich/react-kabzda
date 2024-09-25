@@ -1,13 +1,19 @@
 import s from './AccordionTitle.module.css';
+import {Dispatch, SetStateAction} from "react";
 
 type PropsType = {
 	title: string
-	changeSelected: () => void
+	setCollapsed: Dispatch<SetStateAction<boolean>>
+	collapsed: boolean
 }
 
 const AccordionTitle = (props: PropsType) => {
-	return (
-		<h2 className={s.title} onClick={props.changeSelected}>{props.title}</h2>
+	const changeCollapsed = () => {
+		props.setCollapsed(!props.collapsed);
+	}
+
+ 	return (
+		<h2 className={s.title} onClick={changeCollapsed}>{props.title}</h2>
 	)
 }
 

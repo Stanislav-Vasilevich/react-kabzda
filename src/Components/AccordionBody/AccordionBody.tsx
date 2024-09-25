@@ -1,22 +1,10 @@
-type PropsType = {
-	selected: boolean
-}
-
-const AccordionBody = (props: PropsType) => {
+const AccordionBody = () => {
 	return (
-		<div>
-			{
-				props.selected
-					? (
-						<ul>
-							<li>one</li>
-							<li>two</li>
-							<li>three</li>
-						</ul>
-					)
-					: ''
-			}
-		</div>
+		<ul>
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+		</ul>
 	);
 };
 
