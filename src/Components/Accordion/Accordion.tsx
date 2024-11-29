@@ -8,18 +8,12 @@ type PropsType = {
 }
 
 const Accordion: FC<PropsType> = (props) => {
-	return props.collapsed
-		? (
-			<div>
-				<AccordionTitle title="Menu" setCollapsed={props.setCollapsed} collapsed={props.collapsed}/>
-			</div>
-		)
-		: (
-			<div>
-				<AccordionTitle title="Menu" setCollapsed={props.setCollapsed} collapsed={props.collapsed}/>
-				<AccordionBody/>
-			</div>
-		)
+	return (
+		<div>
+			<AccordionTitle title="Menu" setCollapsed={props.setCollapsed} collapsed={props.collapsed}/>
+			{props.collapsed && <AccordionBody/>}
+		</div>
+	)
 };
 
 export default Accordion;

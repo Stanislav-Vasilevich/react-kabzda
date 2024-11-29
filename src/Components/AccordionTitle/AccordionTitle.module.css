@@ -7,3 +7,9 @@
 	user-select: none;
 	cursor: pointer;
 }
+
+.arrow {
+	font-size: 15px;
+	color: grey;
+	margin: 0 0 0 2px;
+}

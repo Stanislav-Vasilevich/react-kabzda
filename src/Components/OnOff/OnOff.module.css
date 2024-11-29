@@ -1,0 +1,37 @@
+.transformer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.transformer__body {
+  width: 40px;
+  height: 20px;
+  border: 2px solid grey;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.transformer__switch {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+}
+
+.transformer__switch_active {
+  position: relative;
+  top: 0;
+  left: 20px;
+  background: green;
+}
+
+.transformer__title {
+  font-size: 16px;
+  color: red;
+}
+
+.transformer__title_active {
+  color: green;
+}
