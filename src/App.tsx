@@ -5,7 +5,7 @@ import Accordion from "./Components/Accordion/Accordion";
 import OnOff from './Components/OnOff/OnOff';
 
 function App() {
-	const [collapsed, setCollapsed] = useState(true);
+	const [collapsed, setCollapsed] = useState(false);
 
   return (
     <div>
