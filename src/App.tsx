@@ -10,7 +10,7 @@ export type RatingType = 0 | 1 | 2 | 3 | 4 | 5;
 
 function App() {
 	const [collapsed, setCollapsed] = useState(false);
-	const [rating, setRating] = useState<RatingType>(4);
+	const [rating, setRating] = useState<RatingType>(5);
 
 	const changeRating = (value: RatingType) => {
     setRating(value);
