@@ -10,13 +10,13 @@ const UncontrolledRating = () => {
   }
 
   return (
-    <div>
+    <span>
       <Star select={value > 0} value={1} changeRating={changeRating}/>
       <Star select={value > 1} value={2} changeRating={changeRating}/>
       <Star select={value > 2} value={3} changeRating={changeRating}/>
       <Star select={value > 3} value={4} changeRating={changeRating}/>
       <Star select={value > 4} value={5} changeRating={changeRating}/>
-    </div>
+    </span>
   )
 };
 

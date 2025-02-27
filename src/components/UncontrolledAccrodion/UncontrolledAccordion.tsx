@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import s from '../AccordionTitle/AccordionTitle.module.css';
+import img from '../../img/1.jpeg';
 
 const UncontrolledAccordion = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -17,11 +18,7 @@ const UncontrolledAccordion = () => {
 
       {
         collapsed
-          ? <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-          </ul>
+          ? <div className="img"><img className="photo" src={img} alt=""/></div>
           : ''
       }
     </div>

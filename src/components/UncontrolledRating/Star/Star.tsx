@@ -12,11 +12,9 @@ const Star = (props: PropsType) => {
     props.changeRating(props.value);
   }
 
-  return (
-    props.select
+  return props.select
       ? <span onClick={onClickHandler} className={`${s.star} ${s.active}`}>&#9733;</span>
       : <span onClick={onClickHandler} className={s.star}>&#9734;</span>
-  )
 }
 
 export default Star;

@@ -1,11 +1,8 @@
+import img from '../../img/1.jpeg';
+import React from 'react';
+
 const AccordionBody = () => {
-	return (
-		<ul>
-			<li>one</li>
-			<li>two</li>
-			<li>three</li>
-		</ul>
-	);
+	return <div className="img"><img className="photo" src={img} alt=""/></div>;
 };
 
 export default AccordionBody;
