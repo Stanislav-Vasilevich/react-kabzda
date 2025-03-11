@@ -13,7 +13,7 @@ const AccordionTitle = (props: PropsType) => {
 	}
 
  	return (
-		<h2 className={s.title} onClick={changeCollapsed}>
+		<h2 className={s.title} onClick={(e) => changeCollapsed()}>
 			{props.title}
 			{props.collapsed ? <span className={s.arrow}>&#9650;</span> : <span className={s.arrow}>&#9660;</span>}
 		</h2>

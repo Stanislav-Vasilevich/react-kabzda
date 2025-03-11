@@ -1,8 +1,8 @@
-import React, {Dispatch, FC, SetStateAction, useState} from 'react';
+import {Dispatch, FC, SetStateAction} from 'react';
 import AccordionTitle from "../AccordionTitle/AccordionTitle";
 import AccordionBody from "../AccordionBody/AccordionBody";
 
-type PropsType = {
+export type PropsType = {
 	collapsed: boolean
 	setCollapsed: Dispatch<SetStateAction<boolean>>
 }
