@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import './App.css';
 import Rating from "./components/Rating/Rating";
 import Accordion from "./components/Accordion/Accordion";
@@ -7,6 +6,7 @@ import UncontrolledAccordion from './components/UncontrolledAccrodion/Uncontroll
 import UncontrolledRating from './components/UncontrolledRating/UncontrolledRating';
 import UncontrolledOnOff from './components/UncontrolledOnOff/UncontrolledOnOff';
 import img from './img/1.jpeg';
+import {useState} from 'react';
 
 export type RatingType = 0 | 1 | 2 | 3 | 4 | 5;
 
