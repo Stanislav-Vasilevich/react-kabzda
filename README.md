@@ -5,3 +5,6 @@
 
 ### start
 `pnpm dev`
+
+### start srorybook
+`storybook dev -p 6006`

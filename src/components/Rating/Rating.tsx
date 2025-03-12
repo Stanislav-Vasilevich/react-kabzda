@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import Star from "./Star/Star";
 import {RatingType} from '../../App';
 

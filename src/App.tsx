@@ -5,7 +5,6 @@ import OnOff from './components/OnOff/OnOff';
 import UncontrolledAccordion from './components/UncontrolledAccrodion/UncontrolledAccordion';
 import UncontrolledRating from './components/UncontrolledRating/UncontrolledRating';
 import UncontrolledOnOff from './components/UncontrolledOnOff/UncontrolledOnOff';
-import img from './img/1.jpeg';
 import {useState} from 'react';
 
 export type RatingType = 0 | 1 | 2 | 3 | 4 | 5;
