@@ -2,22 +2,23 @@ import {Meta, StoryObj} from '@storybook/react';
 import OnOff from './OnOff';
 
 const meta: Meta<typeof OnOff> = {
+  title: 'Компоненты/ONOFF',
   component: OnOff,
+  tags: ['autodogs'],
 }
 
 export default meta;
-type Story = StoryObj<typeof OnOff>
+
+type Story = StoryObj<typeof OnOff>;
 
 export const On: Story = {
   args: {
-    changeOnOff: a => a,
     includedOnOff: true
   }
 }
 
 export const Off: Story = {
   args: {
-    changeOnOff: a => a,
     includedOnOff: false
   }
 }
